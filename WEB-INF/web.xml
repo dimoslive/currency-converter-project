@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>NewServletListener</listener-class>
+    </listener>
+    
+    <context-param>
+        <param-name>redirect</param-name>
+        <param-value>http://dimoslive.wordpress.com/2011/11/15/project-4-currency-converter-at-inf-uth-server/</param-value>
+    </context-param>
+    
+    <servlet>
+        <servlet-name>CurrencyConverter</servlet-name>
+        <servlet-class>CurrencyConverter</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>Download</servlet-name>
+        <servlet-class>Download</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>report_info</servlet-name>
+        <servlet-class>report_info</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CurrencyConverter</servlet-name>
+        <url-pattern>/CurrencyConverter</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Download</servlet-name>
+        <url-pattern>/Download</url-pattern>
+    </servlet-mapping>
+   
+    <servlet-mapping>
+        <servlet-name>report_info</servlet-name>
+        <url-pattern>/report_info</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+</web-app>
+
