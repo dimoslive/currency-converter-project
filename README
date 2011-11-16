@@ -1,1 +1,17 @@
-Hello WOrld!
+Hello everyone!
+
+This is a very simple currency converter which uses servlets.
+It has 3 fanctionalities. 
+1) Converts dynamically the currencies you want
+by sending a post to google server.To do this you just compile the .java files that are
+in the src folder and then create a folder with name classes/ in the WEB-INF/ directory.
+Or you just create a new web application in netbeans and use them.
+2) You can download a zip file with all
+the project you have written.For this you have to compress your project to a zip 
+file and put this zip file into you directory.It dependes which programma you use.
+If you use NetBeans you have to put it in the web folder.If you use just Tomcat then 
+you put the zip file in the same directory where WEB-INF/ is.
+3) You can redirect to my webpage at wordpress or at the page you want. Just add the page at the 
+web.xml file. The redirect happens with the use of a Listener.
+
+That's all for now
